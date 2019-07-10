@@ -10,7 +10,7 @@
 
 # production
 /node_modules
-/dist/img
+
 
 # misc
 .DS_Store
