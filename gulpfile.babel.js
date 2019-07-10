@@ -26,7 +26,8 @@ gulp.task('minificahtml', () => {
 
   gulp.task('minificascss', function () {
     var plugins = [
-        autoprefixer({browsers: ['last 1 version']}),
+        autoprefixer({overrideBrowserslist: ['last 1 version'],
+        cascade: false}),
         cssnano()
     ];
     return gulp.src('src/scss/main.scss')

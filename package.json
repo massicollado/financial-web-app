@@ -3,10 +3,27 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "transpilajs": "gulp transpilajs",
+    "minificahtml": "gulp minificahtml",
+    "minificascss": "gulp minificascss",
+    "build": "gulp build",
+    "serve": "gulp serve",
+    "serveinit": "gulp serveinit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 1 version",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "massicollado",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.5.0",
@@ -24,5 +41,13 @@
     "gulp-uglify": "^3.0.2"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massicollado/financial-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/massicollado/financial-web-app/issues"
+  },
+  "homepage": "https://github.com/massicollado/financial-web-app#readme",
   "description": ""
 }

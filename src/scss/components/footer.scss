@@ -1,0 +1,94 @@
+footer {
+  background-color: $footer-color;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+
+  h2 {
+    font-size: 16px;
+    font-weight: 350;
+    color: $color-white;
+    margin-bottom: 30px;
+    font-family: $font-primary;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: $font-primary;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+      line-height: 30px;
+      font-family: $font-primary;
+      font-weight: lighter;
+    }
+  }
+  label {
+    color: $color-white;
+    font-size: 14px;
+    font-style: italic;
+    margin-right: 40px;
+    width: 50px;
+    height: 50px;
+    font-family: $font-primary;
+    font-weight: lighter;
+  }
+
+  input {
+    margin-top: 40px;
+    height: 30px;
+    font-family: $font-primary;
+  }
+
+  button {
+    font-family: $font-primary;
+    height: 30px;
+    width: 100px;
+    background-color: #223e73;
+    color: $color-white;
+    font-family: $font-primary;
+    border: none;
+    margin-top: 20px;
+    font-weight: lighter;
+  }
+  figure {
+    figcaption {
+      font-family: $font-primary;
+      margin-top: 40px;
+      margin-bottom: 70px;
+      font-family: $font-primary;
+      color: $color-white;
+      text-align: center;
+      line-height: 15px;
+      font-weight: lighter;
+      font-size: 14px;
+    }
+    small {
+      font-family: $font-primary;
+      color: $color-white;
+      float: right;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+}
+  .shadow{
+  position: relative;
+}
+  
+  .shadow::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 1150px;
+    height: 200px;
+    background : transparent;  
+    box-shadow: 10px 200px #223e73;
+    transform: translate(-97px,135px) skew(20deg, 0deg);
+  }
+  
+
