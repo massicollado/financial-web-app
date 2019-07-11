@@ -1,0 +1,87 @@
+.seccion-plans{
+    background-color: $footer-color;
+   
+
+    div{
+        align-content: center;
+    }
+    h1{
+        text-align: center;
+        color: $color-white;
+        font-family: $font-primary;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-bottom: 6em;
+        border: solid 1px black;
+        line-height: 60px;
+        width: 300px;
+
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  display: block;
+    position: relative;
+    width:  $circle-size;
+    height: $circle-size;
+    padding: 0;
+    border-radius: 50%; 
+    list-style: none;       
+    
+    > * {
+      display: block;
+      position: absolute;
+      top:  50%; 
+      left: 50%;
+      width:  $item-size;
+      height: $item-size;
+      margin: -($item-size / 2);
+    
+      $angle: (360 / $item-count);
+      $rot: 268;
+  
+      @for $i from 1 through $item-count {
+        &:nth-of-type(#{$i}) {
+          transform: 
+            rotate($rot * 1deg) 
+            translate($circle-size / 2) 
+            rotate($rot * -1deg);
+        }
+  
+        $rot: $rot + $angle;
+      }
+    }
+  }
+  .circle-container {
+    @include on-circle($item-count: 3, $circle-size: 500px, $item-size: 50%); 
+    margin: 5em auto 0;
+    border: dashed 2px $color-white;
+    h3{
+        color: $color-white;
+        font-size: 12px;
+        font-family: $font-primary;
+        font-weight: lighter;
+    }
+    
+    figure { 
+        padding-top: 2%;
+      display: block; 
+      max-width: 100%; 
+      background-color: $btn-color;
+      border-radius: 100%;
+      transition: .15s;
+      text-align: center;
+      justify-content: center;
+        img{
+            margin: 25px;
+        }
+      &:hover,
+      &:active {
+        filter: grayscale(0);
+      }
+    }
+  }

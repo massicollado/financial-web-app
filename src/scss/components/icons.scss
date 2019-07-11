@@ -1,6 +1,12 @@
 .secicon{
     background-color:$btn-color;
     color: white;
+   
+  
+
+    div{
+        justify-content: center;
+    }
     h1{
         font-family: $font-secondary;
         font-size: 20px;
@@ -10,8 +16,9 @@
     }
 
     figure{
-        margin-right: 70px;
+        text-align: center;
     }
+  
     
     
 }
